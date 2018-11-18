@@ -1,0 +1,1 @@
+SELECT mach.MachineName 'Name', man.ManName 'Manufacturer', man.SupportPhone 'Manufacturer Support', man.LocalSupplier 'Parts Distributor', tech.TechName 'Assigned To' FROM machines mach NATURAL JOIN manufacturers man JOIN locs JOIN technicians tech ON locs.assignedtech = tech.techid WHERE mach.propertyid = 1;

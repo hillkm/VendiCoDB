@@ -1,0 +1,1 @@
+create table counties (countyid int auto_increment not NULL,  countyname varchar(36) not null,     taxpayernum bigint,     cranestickerreqd char(1),     countystickerreqd char(1),     primary key (countyid)     )
